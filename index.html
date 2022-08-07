@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+#wrapper {
+
+    position:relative;
+    left:45%;
+}
+
+</style>
+
+<body>
+
+    <img src="pic/Saylani logo.png" alt="Saylani logo" width="40%" class="center">
+
+
+<h1 style="font-size: 2.5rem; text-align: center;">Saylani Online Academy</h1>
+
+
+    <form action="submit.html" method="get" class="content">
+        <fieldset style="width: 500px; background-color: lightgray; border: 0;">
+            <table>
+
+                <h1 style="text-align: center;">Student Registration Form</h1>
+
+                
+                <tr>
+                    <td>Name:</td>
+                    <td class="content">
+                        <input type="text" 
+                        size="35" name="fname"
+                         placeholder="Name"
+                         required>
+                           
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td class="content">
+                        <input type="text" size="35" name="lname" placeholder="Last Name" 
+                        required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td class="content">
+                        <input type="Password" size="35" name="Password" placeholder="Password" 
+                        required >
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td class="content">
+                        <textarea name="Address" id="" cols="35" rows="5" placeholder="Address"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td class="content">
+                        <input type="radio" id="male" name="gender" 
+                        value="male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" 
+                        value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Language</td>
+
+                    <td class="content">
+                        <input type="checkbox" id="hb1" name="hobbie1" 
+                        value="Urdu">
+
+                        <label for="hb1">Urdu</label>
+
+                        <input type="checkbox" id="hb2" name="hobbie2" 
+                        value="English">
+
+                        <label for="hb2">English</label>
+
+                        <input type="checkbox" id="hb3" name="hobbie3" 
+                        value="Arabic">
+
+                        <label for="hb3">Arabic</label>
+
+                        
+                        <input type="checkbox" id="hb4" name="hobbie4" 
+                        value="Chiness">
+
+                        <label for="hb4">Chiness</label>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>DOB:</td>
+                    <td class="content">
+                        <input type="date"/>
+                    </td>
+                   </tr>
+
+                   <tr>
+                    <td>Email Id:</td>
+                    <td class="content">
+                        <input type="email" size="35" name="Email Id" placeholder="Email ID" 
+                        required >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td class="content">
+                        <input type="number" size="26" name="Mobile Number" placeholder="Mobile Number" 
+                        required minlength="11"
+                        maxlength="15">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>City:</td>
+                    <td class="content">
+                        <select name="Country">
+                            <option value="" disabled selected>Select Your City</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Hobbies:
+                    </td>
+                    <td class="content">
+                        <select name="country" id="" multiple size="4" >
+                            <option value="Circket">Circket</option>
+                            <option value="Football">Football</option>
+                            <option value="Hokey">Hokey</option>
+                            <option value="Tennis">Tennis</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Food">Food</option>
+                            <option value="Gaming">Gaming</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Picture Upload:
+                    </td>
+                    <td class="content">
+                        <input type="file" 
+                        multiple
+                        accept="image/*,.pdf,.docx">
+                        
+                        <input type="button" value="Upload">
+                        
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td id="wrapper">
+                        <button type="submit" value="Submit Form">Submit Form</button>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+
+
+
+    </form>
+</body>
+</html>
